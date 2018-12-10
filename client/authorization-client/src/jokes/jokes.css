@@ -1,4 +1,35 @@
+.jokeCard {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  background-color: rgba(13, 13, 128, .8);
+  color: white;
+}
+
 img {
   width: 200px;
   height: auto;
 }
+button {
+  padding: 1%;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: rgba(13, 13, 128, .7);
+  -moz-transform: skew(-14deg, 0deg);
+  -webkit-transform: skew(-14deg, 0deg);
+  -o-transform: skew(-14deg, 0deg);
+  -ms-transform: skew(-14deg, 0deg);
+  transform: skew(-14deg, 0deg);
+  transition: transform .3s;
+  color: white;
+}
+
+.dannyTannerGif{
+  size: 500px;
+}
+
+/* .jokeCards {
+  display: flex;
+  flex-direction: row;
+} */

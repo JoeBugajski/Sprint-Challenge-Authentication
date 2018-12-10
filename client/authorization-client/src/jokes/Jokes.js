@@ -8,6 +8,7 @@ import dad4 from './dads/dad4.jpeg';
 import dad5 from './dads/dad5.jpg';
 import dad6 from './dads/dad6.jpg';
 import dannyTanner from './dads/dannyTanner.jpg';
+import dannyTannerGif from './dads/dannyTanner.gif';
 const dads =[
   dad1,
   dad2,
@@ -31,10 +32,10 @@ class Jokes extends Component {
   render() {
     return (
       <div className='jokeCards'>
-        <ul>
-        <h2>Infinite Dad Joke Generator</h2>
+        
+        <h1>Infinite Dad Joke Generator!</h1>
           {this.state.jokes.map(joke =>
-            <div key={joke.id}>
+            <div key={joke.id} className='jokeCard'>
               <div className='imageContainer'>
                   <img 
                     src={dads[Math.floor(Math.random()*dads.length)]}
@@ -47,7 +48,7 @@ class Jokes extends Component {
             </div>
             )
           }
-        </ul>
+        <img className='danny'src={dannyTannerGif} alt='Danny Tanner'/>
       </div>
     );
   }

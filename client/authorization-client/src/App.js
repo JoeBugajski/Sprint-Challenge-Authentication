@@ -19,7 +19,7 @@ class App extends Component {
           <header className="App-header">
             <div className="navLinks">
               <NavLink to='/jokes'>
-                <h1>Take Me to Joke Town</h1>
+                <h1>Dad Jokes</h1>
               </NavLink>
               <NavLink to="/login">
                 <h1>Login</h1>
@@ -31,7 +31,6 @@ class App extends Component {
               <Route path="/login" component={Login}/>
               <Route path='/register' component={Register}/>
             </div>
-
         </header>
       </div>
     );

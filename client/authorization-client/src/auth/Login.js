@@ -41,7 +41,7 @@ class Login extends Component {
   register = event => {
     event.preventDefault();
     axios
-      .post('http://localhost:3400/api/login', this.state)
+      .post('http://localhost:5200/api/login', this.state)
       .then(res => {
       console.log(res.data);
       localStorage.setItem('jwt', res.data.token);
